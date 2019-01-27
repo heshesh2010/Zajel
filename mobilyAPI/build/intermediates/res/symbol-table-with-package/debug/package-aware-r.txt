@@ -1,0 +1,7 @@
+com.mobily.api.sms
+drawable ic_launcher
+layout activity_test
+string app_name
+string connection_msg
+string service_not_available_ar
+string service_not_available_en

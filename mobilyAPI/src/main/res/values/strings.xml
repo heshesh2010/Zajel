@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">زاجل</string>
+    <string name="service_not_available_en">Service not available...</string>
+    <string name="service_not_available_ar">الخدمة غير متوفرة</string>
+    <string name="connection_msg">لأ يوجد انترنت</string>
+
+</resources>

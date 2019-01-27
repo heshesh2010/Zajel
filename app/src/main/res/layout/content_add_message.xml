@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Zajel_white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/Zajel_yellow"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/BackKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/pageTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/Zajel_white"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_alignBaseline="@+id/BackKey"
+            android:layout_toEndOf="@+id/BackKey"
+            android:text="إضافة رسالة جديدة" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/smsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar" />
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:inputType="textMultiLine"
+        android:hint="يجب ان لاتتعدى الرسالة 140 حرف"
+        android:textSize="24sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:focusable="true"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:gravity="right|top"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/messageET"
+        android:layout_below="@+id/smsIcon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageET"
+        android:layout_alignStart="@+id/messageET"
+        android:layout_alignEnd="@+id/messageET"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        app:mrl_rippleOverlay="true"
+        android:gravity="center_vertical|center_horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="إرسال"
+        android:textColor="@color/Zajel_white"
+        android:background="@color/Zajel_yellow"
+        android:id="@+id/SendButton"
+        android:textSize="25sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/messageET"
+        android:layout_alignStart="@+id/messageET"
+        android:layout_alignEnd="@+id/messageET" />
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</RelativeLayout>

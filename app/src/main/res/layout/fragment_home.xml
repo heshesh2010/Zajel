@@ -1,0 +1,98 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:layout_above="@+id/indicator">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:id="@+id/LightIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon7"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/SliderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:text="جاري تحميل النص"
+                android:textColor="@color/Zajel_white"
+                android:textSize="30sp"
+                android:ellipsize="end"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/LightIcon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/SliderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="جاري تحميل النص"
+            android:textColor="@color/Zajel_white"
+            android:textSize="22sp"
+            android:foregroundGravity="top"
+            android:ellipsize="end"
+            android:maxLines="8"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/ShareIcon"
+            android:layout_above="@+id/ShareIcon"
+            android:layout_alignStart="@+id/PopUpIcon" />
+
+        <ImageView
+            android:id="@+id/ShareIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon8"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/PopUpIcon" />
+
+
+        <ImageView
+            android:id="@+id/PopUpIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon9"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <soft.deal.best.topline.islamzajel.utils.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dip" />
+</RelativeLayout>

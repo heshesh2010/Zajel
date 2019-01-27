@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="soft.deal.best.topline.islamzajel"
+    android:installLocation="auto">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2315015693339914~3258868755"/>
+
+
+
+
+
+        <activity android:name="soft.deal.best.topline.islamzajel.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN"
+                />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+        <activity android:name="soft.deal.best.topline.islamzajel.ContactUsActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.Order1Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.AddMessage"
+            android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait" />
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.DonationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.BoxesActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.Order2Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="soft.deal.best.topline.islamzajel.MessageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="org.achartengine.GraphicalActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

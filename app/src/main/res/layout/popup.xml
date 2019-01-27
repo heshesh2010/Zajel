@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Zajel_black"
+    android:alpha="0.7"
+    android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:alpha="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/Zajel_white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اكتب الرقم بالصيغة الدولية "
+                android:id="@+id/textView3"
+                android:textSize="25sp"
+                android:textColor="@color/Zajel_panfsg"
+                android:layout_above="@+id/phoneNumberET"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp" />
+
+            <EditText
+                android:id="@+id/phoneNumberET"
+                android:inputType="phone"
+                android:background="@color/Zajel_white"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="30sp"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:id="@+id/dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إغلاق"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textColor="@color/Zajel_white"
+        android:layout_below="@+id/phoneNumberET"
+        android:layout_toStartOf="@+id/no" />
+
+    <Button
+        android:id="@+id/sendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إرسال الآن"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/Zajel_white"
+        android:textSize="20sp"
+        android:layout_below="@+id/phoneNumberET"
+        android:layout_toEndOf="@+id/no" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/Zajel_white"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:layout_below="@+id/phoneNumberET"
+                android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/Zajel_gry"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@drawable/sms_button_hover"
+        android:id="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/BoxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/message"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/BoxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:text="المحتوى هنا المحتوى هنا"
+        android:color="@color/Zajel_black"
+        android:textSize="25sp"
+        android:gravity="start"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/BoxButton"
+        android:layout_toEndOf="@+id/BoxArrow" />
+
+    <ImageView
+        android:id="@+id/BoxArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/arrow2"
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</RelativeLayout>

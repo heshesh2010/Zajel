@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Zajel_white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/Zajel_Green"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/BackKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/pageTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginRight="30dp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/Zajel_white"
+            android:textSize="25sp"
+            android:text="تهادُوا تحابُّوا"
+            android:layout_centerVertical="true"
+            android:gravity="end|center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_alignBaseline="@+id/BackKey"
+            android:layout_toEndOf="@+id/BackKey" />
+
+    </RelativeLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/scrollView">
+
+
+
+        <RelativeLayout
+            android:id="@+id/moreMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="لأن الهدية سنة نبويةٌ ومظهر من مظاهر الحب والاهتمام ووسيلةٌ لشَقِّ طريق الدعوة إلى النفوس ، كان حسنا أن نقوم بخدمتكم بتجهيزها في أحسن صورة لتناسب المدعو رجلا كان أو امرأة"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/TV12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/text"
+                android:layout_below="@+id/TV1"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/TV1"
+                android:layout_alignEnd="@+id/userNametV" />
+
+            <TextView
+                android:id="@+id/userNametV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="الاسم:"
+                android:layout_below="@+id/TV12"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textSize="24sp"
+                android:id="@+id/firstUserNameET"
+                android:background="@drawable/edit_text_style"
+                android:layout_below="@+id/userNametV"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_toEndOf="@+id/no"
+                android:layout_alignStart="@+id/emailET" />
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no"
+                android:layout_below="@+id/userNametV"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/phoneNumbertV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="رقم الجوال ( بالصيغة الدولية )"
+                android:layout_below="@+id/firstUserNameET"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/phoneNumberET"
+                android:inputType="phone"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_below="@+id/phoneNumbertV"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_toEndOf="@+id/no"
+                android:layout_alignStart="@+id/firstUserNameET" />
+
+
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="البريد الإلكتروني"
+                android:layout_below="@+id/phoneNumberET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/emailET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/emailTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/adressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="العنوان:"
+                android:layout_below="@+id/emailET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insideksa"
+                android:text="من داخل السعودية:"
+                android:layout_below="@+id/adressTV"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:checked="true" />
+
+
+
+
+            <TextView
+                android:id="@+id/cityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="المدينة"
+                android:layout_below="@+id/insideksa"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/cityET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_below="@+id/cityTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/districitTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="الحي"
+                android:layout_below="@+id/cityET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/districitET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/districitTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/streetTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="الشارع"
+                android:layout_below="@+id/districitET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/streetET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/streetTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/buildTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="رقم المنزل او البناية"
+                android:layout_below="@+id/streetET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/buildET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/buildTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/outsideeksa"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="من خارج السعودية:"
+                android:layout_below="@+id/buildET"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/country2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="الدولة"
+                android:layout_below="@+id/outsideeksa"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:id="@+id/country2ET"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginStart="20dp"
+                android:gravity="end"
+                android:layout_below="@+id/country2TV"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/city2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="المدينة"
+                android:layout_below="@+id/country2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/city2ET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/city2TV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/districit2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="الحي"
+                android:layout_below="@+id/city2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/districit2ET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/districit2TV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/moqat3a2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="المقاطعه"
+                android:layout_below="@+id/districit2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/moqat3a2ET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/moqat3a2TV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/street2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="الشارع"
+                android:layout_below="@+id/moqat3a2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/street2ET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/street2TV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/build2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="رقم المنزل او البناية"
+                android:layout_below="@+id/street2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/build2ET"
+                android:textSize="24sp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/build2TV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/giftCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="عدد الهدايا"
+                android:layout_below="@+id/build2ET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/giftCountET"
+
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/giftCountTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/cloakTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="محتويات الهدية"
+                android:layout_below="@+id/giftCountET"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Alsidereh"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="العباءة السديرية"                android:layout_below="@+id/cloakTV"
+                android:textColor="@color/Zajel_Green"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AlsiderehTV"
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:text="(بداخلها قطعة لاترى من الخلف ، تمنع العباءة أن تسحب على الأرض إذا سقطت من الرأس) +الجوارب+القفازات+طرحة سادة (2متر*75سم)+نقاب ساتر"
+                android:layout_below="@+id/Alsidereh"
+                android:layout_alignEnd="@+id/emailTV"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/cloakType1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="نوعها"
+                android:layout_below="@+id/AlsiderehTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <RadioGroup
+                android:id="@+id/cloak_TypeRG"
+                android:layout_below="@+id/cloakType1TV"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType1"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مفتوحة مع أزرار"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType2"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مقفلة من الأسفل والأعلى ثلاث أزرار"
+                    android:checked="false" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType3"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مقفلة بالكامل"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/KomTypeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="نوع الكم"
+                android:layout_below="@+id/cloak_TypeRG"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <RadioGroup
+                android:id="@+id/KomTypeRG"
+                android:layout_below="@+id/KomTypeTV"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Kom_subType1"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="بدون كم"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Kom_subType2"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="كم استرتش 2 انش"
+                    android:layout_below="@+id/Kom_subType1"
+                    android:layout_alignRight="@+id/emailTV"
+                    android:layout_alignEnd="@+id/emailTV"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/cloakTallTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="طول العباءة من الخلف"
+                android:layout_below="@+id/KomTypeRG"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/cloakTallET"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/cloakTallTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+            <TextView
+                android:id="@+id/box2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:text="(طريقة القياس:من أعلى الرأس إلى القدمين)"
+                android:layout_below="@+id/cloakTallET"
+                android:layout_alignRight="@+id/cloakTallET"
+                android:layout_alignEnd="@+id/cloakTallET"
+                android:layout_alignLeft="@+id/cloakTallET"
+                android:layout_alignStart="@+id/cloakTallET"
+
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ma5botah"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="العباءة المخبوتة"
+                android:layout_below="@+id/box2TV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:textColor="@color/Zajel_Green"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ma5botahTV"
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:text="(لا تلتصق من الخلف عند الهواء ، لا تحمل الأتربة من الأسفل ، من أستر أنواع العبايات وأقدمها)+الجوارب+القفازات+طرحة سادة (2متر*75سم)+نقاب ساتر"
+                android:layout_below="@+id/Ma5botah"
+                android:textColor="@color/colorAccent"
+                android:layout_alignEnd="@+id/emailTV"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/cloakType2TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="نوعها"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Ma5botahTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+            <RadioGroup
+                android:id="@+id/cloak_Type1RG"
+                android:layout_below="@+id/cloakType2TV"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType11"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مفتوحة مع أزرار"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType22"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مقفلة من الأسفل والأعلى ثلاث أزرار"
+                    android:checked="false" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cloak_subType33"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="مقفلة بالكامل"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/KomType1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="نوع الكم"
+                android:layout_below="@+id/cloak_Type1RG"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <RadioGroup
+                android:id="@+id/KomTyp1eRG"
+                android:layout_below="@+id/KomType1TV"
+                android:layout_alignRight="@+id/emailTV"
+                android:layout_alignEnd="@+id/emailTV"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Kom_subType11"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="بدون كم"
+                    android:layout_below="@+id/KomType1TV"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Kom_subType22"
+                    android:gravity="center_vertical"
+                    android:button="@null"
+                    android:textSize="20sp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:text="كم استرتش 2 انش"
+                    android:layout_below="@+id/Kom_subType11"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/cloakTall1TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="طول العباءة من الخلف"
+                android:layout_below="@+id/KomTyp1eRG"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:id="@+id/cloakTall1ET"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/cloakTall1TV"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/box3TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:text="(طريقة القياس:من أعلى الرأس إلى القدمين)"
+                android:layout_below="@+id/cloakTall1ET"
+                android:layout_alignRight="@+id/cloakTall1ET"
+                android:layout_alignEnd="@+id/cloakTall1ET"
+                android:layout_alignLeft="@+id/cloakTall1ET"
+                android:layout_alignStart="@+id/cloakTall1ET" />
+
+
+            <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gift_tybe1"
+            android:gravity="center_vertical"
+            android:button="@null"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+            android:layout_below="@+id/box3TV"
+            android:layout_alignEnd="@+id/TV1"
+            android:layout_alignParentStart="true"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="سي دي القرآن الكريم"
+           />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe2"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="كاسيت القرآن الكريم"
+              />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe3"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe2"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="كاسيت دعوي عن ..."
+         />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe4"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe3"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="سي دي دعوي عن..."
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe5"
+                android:gravity="center_vertical"
+                android:button="@null"
+
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe4"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="كتيب دعوي عن..."
+              />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe6"
+                android:gravity="center_vertical"
+                android:button="@null"
+
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe5"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="كتاب الحجاب للطريفي"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe7"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe6"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="سواك"
+               />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe8"
+                android:gravity="center_vertical"
+                android:button="@null"
+
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe7"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="مصحف صغير"
+               />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe9"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe8"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="بطاقة أذكار الصباح والمساء"
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe10"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe9"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="وردة"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe11"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe10"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="دهن عود"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe12"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe11"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="عطر"
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe13"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe12"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="حلوى"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe14"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe13"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="كوبون شراء من روضة القرآن"
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe15"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe14"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="مظروف رجالي لكتابة رسالة"
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_tybe16"
+                android:gravity="center_vertical"
+                android:button="@null"
+                android:textSize="20sp"
+                android:layout_below="@+id/gift_tybe15"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentStart="true"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="مظروف نسائي لكتابة الرسالة"
+                 />
+
+            <TextView
+                android:id="@+id/noteTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="@color/Zajel_black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="ملاحظات"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/gift_tybe16"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/noteET"
+                android:textSize="24sp"
+                android:maxLines="4"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/noteTV"
+                android:layout_alignRight="@+id/TV1"
+                android:layout_alignEnd="@+id/TV1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noteET"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignStart="@+id/noteET"
+                android:layout_alignEnd="@+id/noteET"
+                app:mrl_rippleOverlay="true"
+                android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="إرسال"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="25sp"
+                android:background="@color/Zajel_Green"
+                android:id="@+id/SendButton"
+                android:textColor="@color/Zajel_white"
+                android:layout_below="@+id/noteET"
+                android:layout_alignStart="@+id/noteET"
+                android:layout_alignEnd="@+id/noteET" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

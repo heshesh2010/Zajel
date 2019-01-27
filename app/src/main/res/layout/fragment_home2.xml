@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/BarGraph2"
+    android:background="@color/Zajel_Greenbox"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/SliderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:text="عدد الرسائل المرسلة"
+        android:textColor="@color/Zajel_white"
+        android:textSize="30sp"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/BarGraph3"
+        android:background="@color/Zajel_Greenbox"
+        android:orientation="vertical">
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

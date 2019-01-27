@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#01b0f1</color>
+    <color name="colorAccent">#c0504e</color>
+    <color name="transparent">#10000000</color>
+
+
+    <color name="Zajel_white">#ffffff</color>
+    <color name="Zajel_Green">#73b90f</color>
+    <color name="Zajel_GreenFont">#60a201</color>
+    <color name="Zajel_Greenbox">#00af50</color>
+    <color name="Zajel_gry">#efefef</color>
+    <color name="Zajel_gry2">#838383</color>
+    <color name="Zajel_gry3">#d8d8d8</color>
+
+
+    <color name="Zajel_black">#000000</color>
+    <color name="Zajel_yellow">#ffc000</color>
+    <color name="Zajel_darkblue">#012060</color>
+    <color name="Zajel_panfsg">#7030a0</color>
+</resources>

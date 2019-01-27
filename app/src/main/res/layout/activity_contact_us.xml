@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Zajel_white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/Zajel_darkblue"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/BackKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/pageTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="@color/Zajel_white"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:gravity="end|center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_alignBaseline="@+id/BackKey"
+            android:layout_toEndOf="@+id/BackKey"
+            android:text="راسلنا"
+             />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/userNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/contactus_activity_username"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignEnd="@+id/messageTV" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="30"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxLines="1"
+        android:background="@drawable/edit_text_style"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="24sp"
+        android:gravity="right"
+        android:id="@+id/userNameET"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/userNameTV" />
+
+    <TextView
+        android:id="@+id/PhonrNumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رقم الجوال:"
+        android:maxLines="1"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/userNameET"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:ems="30"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_style"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="24sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:gravity="right"
+        android:id="@+id/PhonrNumberET"
+        android:layout_below="@+id/PhonrNumberTV" />
+
+
+    <TextView
+        android:id="@+id/emailTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="البريد الإلكتروني:"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:layout_marginEnd="30dp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/PhonrNumberET"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="30"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/edit_text_style"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="24sp"
+        android:gravity="right"
+        android:id="@+id/emailET"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/emailTV" />
+
+
+    <TextView
+        android:id="@+id/subjectTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عنوان الرسالة:"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:layout_marginEnd="30dp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/emailET"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="30"
+        android:background="@drawable/edit_text_style"
+        android:focusable="true"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="20sp"
+        android:gravity="right"
+        android:id="@+id/subjectET"
+        android:layout_below="@+id/subjectTV"
+        android:layout_alignEnd="@+id/subjectTV"
+        android:layout_alignStart="@+id/emailET" />
+
+
+    <TextView
+        android:id="@+id/messageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الرسالة:"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/subjectET" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/edit_text_style"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textColor="@color/Zajel_black"
+        android:textSize="24sp"
+        android:inputType="textShortMessage|textMultiLine"
+        android:focusable="true"
+        android:maxLines="4"
+        android:scrollHorizontally="true"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/messageET"
+        android:layout_below="@+id/messageTV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/messageET"
+        android:layout_alignEnd="@+id/messageET"
+        android:layout_marginBottom="30dp"
+        app:mrl_rippleOverlay="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/messageET"
+        android:gravity="center_vertical|center_horizontal">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="إرسال"
+        android:textColor="@color/Zajel_white"
+        android:background="@color/Zajel_darkblue"
+        android:id="@+id/SendButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@+id/messageET"
+        android:textSize="25sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignStart="@+id/messageET"
+        android:layout_alignEnd="@+id/messageET" />
+
+
+</com.balysv.materialripple.MaterialRippleLayout>
+
+</RelativeLayout>

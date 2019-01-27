@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1082772916727",
+    "firebase_url": "https://zajel-ddb7a.firebaseio.com",
+    "project_id": "zajel-ddb7a",
+    "storage_bucket": "zajel-ddb7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082772916727:android:b306802c31c1d8fc",
+        "android_client_info": {
+          "package_name": "soft.deal.best.topline.islamzajel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082772916727-crmusp9b7qvdj09ss7hnr179uvmlcvtp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "soft.deal.best.topline.islamzajel",
+            "certificate_hash": "21BC171F986FF3DE8B3D4B14504A470656957FE5"
+          }
+        },
+        {
+          "client_id": "1082772916727-ju73e718cg9j3116oastqkg083015779.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR_kf9LYW9R040MFTXdGuTdKMBu8fcuWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082772916727-ju73e718cg9j3116oastqkg083015779.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

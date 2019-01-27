@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Zajel_gry"
+    android:id="@+id/mainly"
+    style="@style/AppTheme.NoActionBar">
+
+    <RelativeLayout
+        android:id="@+id/TopBar"
+        android:background="@color/Zajel_white"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/logo"
+        tools:ignore="ContentDescription"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+        <View android:id="@+id/View04"
+            android:layout_width="0.7dip"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toStartOf="@+id/Logo"
+            android:background="@color/Zajel_gry2" />
+
+        <TextView
+            android:id="@+id/LogoText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:gravity="center_vertical"
+            android:text="مَبعُوثُ النَّصِيحَة"
+            android:textColor="@color/Zajel_black"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@+id/View04" />
+
+        <ImageView
+            android:id="@+id/Logo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/TopBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RelativeLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp" />
+
+            <ProgressBar
+                android:id="@+id/ProgressBar"
+                android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_above="@+id/Slider2"
+                android:layout_centerHorizontal="true">
+            </ProgressBar>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/Slider2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dotted"
+        android:layout_below="@+id/content_frame">
+
+        <TextView
+            android:id="@+id/Slider2Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="عنوان السلايدر الثاني "
+            android:textColor="@color/Zajel_black"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/Slider2Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="جاري تحميل النص"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/Zajel_black"
+            android:textSize="17sp"
+            android:gravity="start|top"
+            android:layout_below="@+id/Slider2Title" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/moreMenu"
+                android:layout_below="@+id/Slider2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/noBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/Zajel_white"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+
+                <RelativeLayout
+        android:id="@+id/Box1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_corner2"
+        android:layout_below="@+id/noBox"
+        android:layout_toStartOf="@+id/noBox">
+
+        <ImageView
+            android:id="@+id/smsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon2"
+            android:layout_marginTop="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/smsText"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/smsIcon"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="صِغ رسالة بأسلوبك "
+            android:textColor="@color/Zajel_yellow"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            app:mrl_rippleOverlay="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/smsButton1"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="16sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/Zajel_white"
+                android:background="@color/Zajel_yellow"
+                android:text="أضف رسالة"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Box3"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/noBox"
+        android:background="@drawable/rounded_corner2"
+        android:layout_below="@+id/Box1">
+
+        <ImageView
+            android:id="@+id/giftIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon4"
+            android:layout_marginTop="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/giftText"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="تهادُوا تحابُّوا"
+            android:textColor="@color/Zajel_Greenbox"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/giftIcon" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple3"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            app:mrl_rippleOverlay="true"
+            android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/giftButton1"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/Zajel_white"
+            android:background="@color/Zajel_Greenbox"
+            android:text="جهّز الهدية"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/Box4"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/noBox"
+        android:layout_alignStart="@+id/noBox"
+        android:background="@drawable/rounded_corner2"
+        android:layout_below="@+id/Box2">
+
+
+
+        <ImageView
+            android:id="@+id/clothsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon3"
+            android:layout_marginTop="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/clothsText"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="عباءة شرعية"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/clothsIcon" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            app:mrl_rippleOverlay="true"
+            android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/clothsButton1"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/Zajel_white"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorAccent"
+            android:text="اطلبيها الآن"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Box5"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/noBox"
+        android:background="@drawable/rounded_corner2"
+        android:layout_below="@+id/Box3">
+
+        <ImageView
+            android:id="@+id/contactUsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon5"
+            android:layout_marginTop="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/contactUsText"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="راسلنا"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Zajel_darkblue"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/contactUsIcon" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            app:mrl_rippleOverlay="true"
+            android:gravity="center_vertical|center_horizontal">
+
+        <Button
+            android:id="@+id/contactUsButton1"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="30dp"
+            android:background="@color/Zajel_darkblue"
+            android:text="بدء"
+            android:textColor="@color/Zajel_white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Box6"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/noBox"
+        android:background="@drawable/rounded_corner2"
+        android:layout_below="@+id/Box4">
+
+        <ImageView
+            android:id="@+id/smileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon6"
+            android:layout_marginTop="40dp"
+            tools:ignore="ContentDescription"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/smileText"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="شاركنا الأجر"
+            android:textColor="@color/Zajel_panfsg"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/smileIcon" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple6"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"
+            app:mrl_rippleOverlay="true"
+            android:gravity="center_vertical|center_horizontal">
+
+
+        <Button
+            android:id="@+id/smileButton1"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/Zajel_panfsg"
+            android:text="شارك"
+            android:textColor="@color/Zajel_white"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Box2"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+
+                    android:background="@drawable/rounded_corner2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/Box4">
+
+                    <ImageView
+                        android:id="@+id/dotsIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon1"
+                        android:layout_marginTop="40dp"
+                        tools:ignore="ContentDescription"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/dotsText"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:maxLines="1"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        android:text="صناديق الرسائل"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/dotsIcon" />
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/ripple0"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="30dp"
+                        app:mrl_rippleOverlay="true"
+                        android:gravity="center_vertical|center_horizontal">
+
+                    <Button
+                        android:id="@+id/dotsButton1"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:textSize="16sp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginBottom="30dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="@string/main_activity_firstblock"
+                        android:textColor="@color/Zajel_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
